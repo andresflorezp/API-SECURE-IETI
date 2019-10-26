@@ -35,7 +35,7 @@ public class DataBasesCli implements IDataBase {
             int idRamdon =  r.nextInt(high-low) + low  , idRamdon2 =  r.nextInt(high-low) + low;
             User user = new User();
             String name = names[idRamdon] + " "  + lastNames[idRamdon2];
-            String email = names[idRamdon] + "."  + lastNames[idRamdon2]+"@mail.escuelaing.edu.co";
+            String email = names[idRamdon] + "."  + lastNames[idRamdon2]+"@gmail.com";
             user.setUserName(String.valueOf(i+1));
             user.setName(name);
             user.setEmail(email);
@@ -43,10 +43,10 @@ public class DataBasesCli implements IDataBase {
             users.add(user);
         }
         User user = new User();
-        user.setUserName("Andres");
-        user.setName("Andres");
-        user.setEmail("anflo.97@gmail.com");
-        user.setPassword("anflo");
+        user.setUserName("admin");
+        user.setName("admin");
+        user.setEmail("admin@mail.com");
+        user.setPassword("admin");
         users.add(user);
 
         for(int i = 0 ; i < 4 ; ++i){
